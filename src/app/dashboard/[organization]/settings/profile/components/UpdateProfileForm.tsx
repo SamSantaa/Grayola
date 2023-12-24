@@ -2,7 +2,7 @@ import { useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'sonner';
 import { useForm } from 'react-hook-form';
-
+import LanguageDropdownSwitcher from '~/components/LanguageDropdownSwitcher';
 import type { SupabaseClient } from '@supabase/supabase-js';
 
 import useUpdateProfileMutation from '~/lib/user/hooks/use-update-profile';
@@ -129,6 +129,15 @@ function UpdateProfileForm({
         return onSubmit(value.displayName, getPhotoFile(value.photoURL));
       })}
     >
+      <div className={'flex flex-col space-y-4'}>
+        <h1>Ajustes de idioma</h1>
+
+
+    <div>
+      <LanguageDropdownSwitcher />
+    </div>
+
+      </div>
       <div className={'flex flex-col space-y-4'}>
         <TextField>
           <TextField.Label>

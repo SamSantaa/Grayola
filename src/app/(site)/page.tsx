@@ -41,7 +41,7 @@ export default function Home() {
                   ' from-primary-400 to-primary-700 leading-[1.2]'
                 }
               >
-                developers and founders
+                developers and Grayola
               </span>
             </HeroTitle>
 

@@ -1,0 +1,53 @@
+{
+  "dashboardTabLabel": "Tablero",
+  "organizationSettingsTabLabel": "Organización",
+  "settingsTabLabel": "Configuración",
+  "profileSettingsTabLabel": "Perfil",
+  "subscriptionSettingsTabLabel": "Suscripción",
+  "dashboardTabDescription": "Una visión general de la actividad y rendimiento de tu organización en todos tus proyectos.",
+  "settingsTabDescription": "Administra tus configuraciones y preferencias.",
+  "emailAddress": "Dirección de correo electrónico",
+  "password": "Contraseña",
+  "modalConfirmationQuestion": "¿Estás seguro de que deseas continuar?",
+  "imageInputLabel": "Haz clic aquí para subir una imagen",
+  "cancel": "Cancelar",
+  "backToHomePage": "Volver a la página de inicio",
+  "genericServerError": "Lo sentimos, algo salió mal.",
+  "genericServerErrorHeading": "Lo sentimos, algo salió mal al procesar tu solicitud. Por favor, contáctanos si el problema persiste.",
+  "pageNotFound": "Ops. Página no encontrada.",
+  "pageNotFoundSubHeading": "Disculpa, la página que buscabas no fue encontrada",
+  "genericError": "Lo sentimos, algo salió mal.",
+  "genericErrorSubHeading": "Disculpa, ocurrió un error al procesar tu solicitud. Por favor, contáctanos si el problema persiste.",
+  "anonymousUser": "Anónimo",
+  "tryAgain": "Intentar de nuevo",
+  "theme": "Tema",
+  "lightTheme": "Claro",
+  "darkTheme": "Oscuro",
+  "systemTheme": "Tema del sistema",
+  "expandSidebar": "Expandir barra lateral",
+  "collapseSidebar": "Contraer barra lateral",
+  "documentation": "Documentación",
+  "getStarted": "Empezar",
+  "retry": "Reintentar",
+  "contactUs": "Contáctanos",
+  "loading": "Cargando. Por favor, espera...",
+  "yourOrganizations": "Tus organizaciones",
+  "continue": "Continuar",
+  "skip": "Omitir",
+  "signedInAs": "Iniciado sesión como",
+  "pageOfPages": "Página {{page}} de {{total}}",
+  "roles": {
+    "owner": {
+      "label": "Propietario",
+      "description": "Puede cambiar cualquier configuración, invitar nuevos miembros y gestionar la facturación"
+    },
+    "admin": {
+      "label": "Admin",
+      "description": "Puede cambiar algunas configuraciones, invitar miembros, realizar acciones disruptivas"
+    },
+    "member": {
+      "label": "Miembro",
+      "description": "No puede invitar miembros ni cambiar configuraciones"
+    }
+  }
+}

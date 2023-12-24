@@ -1,0 +1,70 @@
+{
+  "subscriptionTabSubheading": "Administra tu Suscripción y Facturación",
+  "checkout": "Pagar",
+  "manageBillingDescription": "Visita tu Portal del Cliente para gestionar tu suscripción y facturación.",
+  "manageBilling": "Ir al Portal del Cliente",
+  "notSubscribedToAnyPlan": "Actualmente no estás suscrito a ningún plan",
+  "choosePlan": "Selecciona un plan a continuación",
+  "currentPlan": "Tu Plan",
+  "subscriptionWillEndOn": "La suscripción finalizará el {{ endDate }}",
+  "unknownErrorAlertHeading": "Lo siento, algo salió mal",
+  "unknownErrorAlert": "Encontramos un error desconocido al procesar tu pago. Por favor, inténtalo de nuevo o ponte en contacto con soporte.",
+  "checkOutCanceledAlertHeading": "La compra fue cancelada",
+  "checkOutCanceledAlert": "La compra fue cancelada. Por favor, contáctanos si experimentas algún problema.",
+  "checkOutCompletedAlertHeading": "Compra completada con éxito",
+  "checkOutCompletedAlert": "¡Hurra, tu pago se realizó con éxito!",
+  "cancelAtPeriodEndDescription": "Tu suscripción está programada para cancelarse el {{ endDate }}.",
+  "renewAtPeriodEndDescription": "Tu suscripción está programada para renovarse el {{ endDate }}",
+  "noPermissionsAlertHeading": "No tienes permisos para cambiar la facturación",
+  "noPermissionsAlertBody": "Por favor, ponte en contacto con el propietario de la organización para cambiar la configuración de facturación para tu organización.",
+  "checkoutSuccessTitle": "¡Listo! Todo está configurado.",
+  "checkoutSuccessDescription": "Gracias por suscribirte, hemos procesado exitosamente tu suscripción. Se enviará un correo electrónico de confirmación a {{ customerEmail }}.",
+  "checkoutSuccessBackButton": "Ir a la Aplicación",
+  "status": {
+    "free": {
+      "label": "Plan Gratuito",
+      "heading": "Actualmente estás en el Plan Gratuito",
+      "description": "Estás en un plan gratuito. Puedes actualizar a un plan de pago en cualquier momento."
+    },
+    "active": {
+      "label": "Activo",
+      "heading": "Tu suscripción está activa",
+      "description": "Tu suscripción está activa. Puedes gestionar tu suscripción y facturación en el Portal del Cliente."
+    },
+    "trialing": {
+      "label": "Prueba",
+      "heading": "Estás en una prueba",
+      "description": "Tu prueba finalizará el {{ trialEndDate }}."
+    },
+    "past_due": {
+      "label": "Vencido",
+      "heading": "Tu factura está vencida",
+      "description": "Tu factura está vencida. Por favor, actualiza tu método de pago."
+    },
+    "canceled": {
+      "label": "Cancelado",
+      "heading": "Tu suscripción está cancelada",
+      "description": "Tu suscripción está cancelada. Está programada para finalizar el {{ endDate }}."
+    },
+    "unpaid": {
+      "label": "No Pagado",
+      "heading": "Tu factura no está pagada",
+      "description": "Tu factura no está pagada. Por favor, actualiza tu método de pago."
+    },
+    "incomplete": {
+      "label": "Incompleto",
+      "heading": "Estamos esperando tu pago",
+      "description": "Estamos esperando que tu pago se procese. Por favor, ten paciencia."
+    },
+    "incomplete_expired": {
+      "label": "Vencido",
+      "heading": "Tu pago ha vencido",
+      "description": "Tu pago ha vencido. Por favor, actualiza tu método de pago."
+    },
+    "paused": {
+      "label": "En Pausa",
+      "heading": "Tu suscripción está en pausa",
+      "description": "Tu suscripción está en pausa. Puedes reanudarla en cualquier momento."
+    }
+  }
+}
