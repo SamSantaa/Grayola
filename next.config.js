@@ -27,6 +27,15 @@ function getRemotePatterns() {
     });
   }
 
+  // next.config.js
+module.exports = {
+  i18n: {
+    locales: ['en', 'es'],
+    defaultLocale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE,
+  },
+};
+
+
   return IS_PRODUCTION
     ? remotePatterns
     : [

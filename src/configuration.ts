@@ -10,16 +10,23 @@ enum Themes {
 
 const configuration = {
   site: {
-    name: 'Awesomely - Your SaaS Title',
-    description: 'Your SaaS Description',
+    name: 'Grayola - Diseño gráfico ilimitado con nuestra suscripción',
+    description: 'Aumenta la producción de contenido creativo con un servicio de diseño confiable y sin complicaciones.',
     themeColor: '#ffffff',
     themeColorDark: '#0a0a0a',
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL,
-    siteName: 'Awesomely',
+    siteName: 'Grayola',
     twitterHandle: '',
     githubHandle: '',
     convertKitFormId: '',
     locale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE,
+  },
+  email: {
+    host: '0.0.0.0',
+    port: 2525,
+    user: 'user',
+    password: 'pass',
+    senderAddress: 'test@makerkit.dev',
   },
   auth: {
     // ensure this is the same as your Supabase project. By default - it's true
@@ -39,7 +46,7 @@ const configuration = {
   environment: process.env.NEXT_PUBLIC_ENVIRONMENT,
   theme: Themes.Light,
   features: {
-    enableThemeSwitcher: true,
+    enableThemeSwitcher: false,
     enableAccountDeletion: getBoolean(
       process.env.NEXT_PUBLIC_ENABLE_ACCOUNT_DELETION,
       false,

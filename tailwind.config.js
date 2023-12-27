@@ -24,6 +24,7 @@ module.exports = {
         monospace: [`SF Mono`, `ui-monospace`, `Monaco`, 'Monospace'],
       },
       colors: {
+        primary: '#182C4D',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -35,9 +36,9 @@ module.exports = {
           foreground: colors.slate[100],
         },
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
+          DEFAULT: '#182C4D',
           foreground: 'hsl(var(--primary-foreground))',
-          ...colors.violet,
+          ...colors.blue,
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',

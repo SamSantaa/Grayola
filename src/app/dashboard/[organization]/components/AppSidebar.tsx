@@ -17,7 +17,7 @@ import SidebarContext from '~/lib/contexts/sidebar';
 import ProfileDropdown from '~/components/ProfileDropdown';
 import useUserSession from '~/core/hooks/use-user-session';
 import useSignOut from '~/core/hooks/use-sign-out';
-
+import Logo from '~/core/ui/Logo';
 import useCurrentOrganization from '~/lib/organizations/hooks/use-current-organization';
 import SubscriptionStatusBadge from './organizations/SubscriptionStatusBadge';
 
@@ -32,6 +32,9 @@ const AppSidebar: React.FC<{
   return (
     <Sidebar collapsed={ctx.collapsed}>
       <SidebarContent className={'my-4'}>
+      <div className="Logo-section" style={{ padding: '0 0 16px 0'}}>
+        <Logo />
+      </div>
         <OrganizationsSelector displayName={!ctx.collapsed} />
       </SidebarContent>
 

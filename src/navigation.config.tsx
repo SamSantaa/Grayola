@@ -1,4 +1,4 @@
-import { Cog8ToothIcon, Squares2X2Icon } from '@heroicons/react/24/outline';
+import { Cog8ToothIcon, HomeIcon, ListBulletIcon, Squares2X2Icon } from '@heroicons/react/24/outline';
 import configuration from '~/configuration';
 
 const NAVIGATION_CONFIG = (organization: string) => ({
@@ -6,6 +6,22 @@ const NAVIGATION_CONFIG = (organization: string) => ({
     {
       label: 'common:dashboardTabLabel',
       path: getPath(organization, ''),
+      Icon: ({ className }: { className: string }) => {
+        return <HomeIcon className={className} />;
+      },
+      end: true,
+    },
+    {
+      label: 'common:ordersTabLabel',
+      path: getPath(organization, 'requests'),
+      Icon: ({ className }: { className: string }) => {
+        return <ListBulletIcon className={className} />;
+      },
+      end: true,
+    },
+    {
+      label: 'common:plansTabLabel',
+      path: getPath(organization, 'plans'),
       Icon: ({ className }: { className: string }) => {
         return <Squares2X2Icon className={className} />;
       },

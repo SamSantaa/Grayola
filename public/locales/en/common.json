@@ -36,6 +36,11 @@
   "skip": "Skip",
   "signedInAs": "Signed in as",
   "pageOfPages": "Page {{page}} of {{total}}",
+  "ordersTabLabel": "Orders",
+  "requestsTabLabel": "Orders",
+  "createRequestLabel": "Create order",
+  "viewNotificationsLabel": "View notificaations ",
+  "plansTabLabel": "Planes",
   "roles": {
     "owner": {
       "label": "Owner",

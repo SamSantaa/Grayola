@@ -1,5 +1,5 @@
 {
-  "dashboardTabLabel": "Tablero",
+  "dashboardTabLabel": "Inicio",
   "organizationSettingsTabLabel": "Organización",
   "settingsTabLabel": "Configuración",
   "profileSettingsTabLabel": "Perfil",
@@ -36,6 +36,11 @@
   "skip": "Omitir",
   "signedInAs": "Iniciado sesión como",
   "pageOfPages": "Página {{page}} de {{total}}",
+  "ordersTabLabel": "Pedidos",
+  "requestsTabLabel": "Pedidos",
+  "createRequestLabel": "Crear pedido",
+  "viewNotificationsLabel": "Ver notificaciones",
+  "plansTabLabel": "Planes",
   "roles": {
     "owner": {
       "label": "Propietario",
