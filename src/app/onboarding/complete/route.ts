@@ -1,26 +1,21 @@
-'use server';
-
 import { z } from 'zod';
-
 import { cookies } from 'next/headers';
 import { NextRequest, NextResponse } from 'next/server';
 
 import getLogger from '~/core/logger';
 import requireSession from '~/lib/user/require-session';
 import completeOnboarding from '~/lib/server/onboarding/complete-onboarding';
-
 import { createOrganizationIdCookie } from '~/lib/server/cookies/organization.cookie';
 import { throwInternalServerErrorException } from '~/core/http-exceptions';
 import MembershipRole from '~/lib/organizations/types/membership-role';
 import inviteMembers from '~/lib/server/organizations/invite-members';
 import getSupabaseRouteHandlerClient from '~/core/supabase/route-handler-client';
-
 import configuration from '~/configuration';
 
 export const maxDuration = 5;
 export const dynamic = 'force-dynamic';
 
-export const POST = async (req: NextRequest) => {
+export default async function handler(req: NextRequest) {
   const logger = getLogger();
 
   const client = getSupabaseRouteHandlerClient();
@@ -92,7 +87,7 @@ export const POST = async (req: NextRequest) => {
     success: true,
     returnUrl,
   });
-};
+}
 
 function getOnboardingBodySchema() {
   return z.object({
