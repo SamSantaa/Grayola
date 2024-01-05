@@ -41,6 +41,7 @@
   "createRequestLabel": "Crear pedido",
   "viewNotificationsLabel": "Ver notificaciones",
   "plansTabLabel": "Planes",
+  "filesTabLabel": "Archivos",
   "roles": {
     "owner": {
       "label": "Propietario",

@@ -1,8 +1,4 @@
 import React from 'react';
-import {
-  RectangleStackIcon,
-  BellIcon
-} from '@heroicons/react/24/outline';
 import Trans from '~/core/ui/Trans';
 import { withI18n } from '~/i18n/with-i18n';
 import AppHeader from '~/app/dashboard/[organization]/components/AppHeader';
@@ -11,6 +7,7 @@ import { DataTable } from './components/orders-table';
 import { Order, columns } from './components/columns';
 import { PageBody } from '~/core/ui/Page';
 import Button from '~/core/ui/Button';
+import { Bell } from "lucide-react"
 
 interface TasksPageParams {
   params: {
@@ -68,7 +65,7 @@ async function TasksPage({ params }: TasksPageParams) {
           </div>
           <div className="ml-4 flex items-center space-x-3 md:ml-6">
           <Button>Crear pedido</Button>
-          <BellIcon className="w-5 h-5 text-primary mx-2"></BellIcon>
+          <Bell className="w-5 h-5 text-primary mx-2"></Bell>
 
           </div>
         </div>

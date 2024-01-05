@@ -40,7 +40,8 @@
   "requestsTabLabel": "Orders",
   "createRequestLabel": "Create order",
   "viewNotificationsLabel": "View notificaations ",
-  "plansTabLabel": "Planes",
+  "plansTabLabel": "Plans",
+  "filesTabLabel": "Files",
   "roles": {
     "owner": {
       "label": "Owner",
