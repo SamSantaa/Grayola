@@ -1,4 +1,4 @@
-import { Cog8ToothIcon, HomeIcon, ListBulletIcon, Squares2X2Icon } from '@heroicons/react/24/outline';
+import { Cog8ToothIcon, HomeIcon, ListBulletIcon, Squares2X2Icon,  } from '@heroicons/react/24/outline';
 import configuration from '~/configuration';
 
 const NAVIGATION_CONFIG = (organization: string) => ({

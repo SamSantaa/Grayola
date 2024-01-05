@@ -17,6 +17,9 @@ import getSupabaseRouteHandlerClient from '~/core/supabase/route-handler-client'
 
 import configuration from '~/configuration';
 
+export const maxDuration = 5;
+export const dynamic = 'force-dynamic';
+
 export const POST = async (req: NextRequest) => {
   const logger = getLogger();
 
@@ -27,7 +30,7 @@ export const POST = async (req: NextRequest) => {
   const body = await getOnboardingBodySchema().parseAsync(await req.json());
   const organizationName = body.organization;
   const invites = body.invites;
-
+  
   const payload = {
     userId,
     organizationName,
