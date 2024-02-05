@@ -22,7 +22,7 @@ import useCurrentOrganization from '~/lib/organizations/hooks/use-current-organi
 import SubscriptionStatusBadge from './organizations/SubscriptionStatusBadge';
 
 import configuration from '~/configuration';
-import OrganizationsSelector from './organizations/OrganizationsSelector';
+
 
 const AppSidebar: React.FC<{
   organizationUid: string;

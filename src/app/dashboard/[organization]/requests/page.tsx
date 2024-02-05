@@ -1,35 +1,38 @@
-import {
-    RectangleStackIcon,
-  } from '@heroicons/react/24/outline';
-   
-  import Trans from '~/core/ui/Trans';
-  import { withI18n } from '~/i18n/with-i18n';
-  import AppHeader from '~/app/dashboard/[organization]/components/AppHeader';
-  import AppContainer from '~/app/dashboard/[organization]/components/AppContainer';
+import { redirect } from 'next/navigation';
+import { fetchRequests } from '~/lib/requests/queries';
+import getSupabaseServerComponentClient from '~/core/supabase/server-component-client';
+import Link from "next/link";
+import { use } from "react";
+import { LucideLayoutDashboard } from "lucide-react";
+import Button from '~/core/ui/Button';
+ 
+async function fetchDashboardPageData() {
+  const client = getSupabaseServerComponentClient();
+  const sessionResponse = await client.auth.getSession();
+  const user = sessionResponse.data?.session?.user;
+ 
+  if (!user) {
+    redirect('/auth/sign-in');
+  }
+ 
+  const { data, error } = await fetchRequests(client, user.id);
+ 
+  if (error) {
+    throw error;
+  }
+ 
+  return data;
+}
 
 
-
-  interface TasksPageParams {
-    params: {
-      organization: string;
-    };
-  }
-   
-  // we will implement this function later
-  async function loadTasksData({ organizationUid }: { organizationUid: string}) {
-    // ...
-  }
-   
-  
-  async function TasksPage({ params }: TasksPageParams) {
-   
-    return (
-      <>
-           <AppHeader title={"Pedidos"}></AppHeader>
-      </>
-    );
-  }
-   
-  export default withI18n(
-    TasksPage
+ 
+function DashboardPage() {
+  const requests = use(fetchDashboardPageData());
+ 
+  return (
+    {requests}
   );
+}
+ 
+export default DashboardPage;
+ 
