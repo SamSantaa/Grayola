@@ -1,10 +1,9 @@
-import { Cog8ToothIcon, HomeIcon, ListBulletIcon, Squares2X2Icon,  } from '@heroicons/react/24/outline';
 import configuration from '~/configuration';
-import { LayoutDashboard, Scroll, Layers, FileBarChart, Package2, Settings } from "lucide-react"
+import { LayoutDashboard, Scroll, Layers, Package2, Settings, FileBarChart } from "lucide-react"
 const NAVIGATION_CONFIG = (organization: string) => ({
   items: [
     {
-      label: 'common:dashboardTabLabel',
+      label: 'Dashboard',
       path: getPath(organization, ''),
       Icon: ({ className }: { className: string }) => {
         return <LayoutDashboard className={className} />;
@@ -28,6 +27,14 @@ const NAVIGATION_CONFIG = (organization: string) => ({
       end: true,
     },
     {
+      label: 'Facturas',
+      path: getPath(organization, 'invoices'),
+      Icon: ({ className }: { className: string }) => {
+        return <FileBarChart className={className} />;
+      },
+      end: true,
+    },
+    {
       label: 'common:filesTabLabel',
       path: getPath(organization, 'files'),
       Icon: ({ className }: { className: string }) => {
@@ -36,7 +43,7 @@ const NAVIGATION_CONFIG = (organization: string) => ({
     },
     {
       label: 'common:settingsTabLabel',
-      path: getPath(organization, 'Ajustes'),
+      path: getPath(organization, 'settings'),
       Icon: ({ className }: { className: string }) => {
         return <Settings className={className} />;
       },

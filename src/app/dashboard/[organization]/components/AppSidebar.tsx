@@ -31,18 +31,17 @@ const AppSidebar: React.FC<{
 
   return (
     <Sidebar collapsed={ctx.collapsed}>
-      <SidebarContent className={'my-4'}>
+      <SidebarContent className={'mb-10'}>
       <div className="Logo-section" style={{ padding: '0 0 16px 0'}}>
         <Logo />
       </div>
-        <OrganizationsSelector displayName={!ctx.collapsed} />
       </SidebarContent>
 
       <SidebarContent>
         <AppSidebarNavigation organization={organizationUid} />
       </SidebarContent>
 
-      <div className={'absolute left-0 bottom-4 w-full'}>
+      <div className={'absolute left-0 bottom-4 w-full   ' }>
         <SidebarContent>
           <ProfileDropdownContainer collapsed={ctx.collapsed} />
         </SidebarContent>
